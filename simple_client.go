@@ -6,6 +6,7 @@ import(
 )
 
 func main() {
-    conn, _ := net.Dial("tcp", ":8080")
-    fmt.Fprintf(conn, "newmessage\n") 
+    conn, _ := net.Dial("tcp", ":9988")
+    fmt.Fprintf(conn, "debug12") 
+    for{}
 }
